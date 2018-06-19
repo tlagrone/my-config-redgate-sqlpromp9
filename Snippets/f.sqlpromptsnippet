@@ -4,26 +4,15 @@
     <Header>
       <Title>f</Title>
       <Shortcut>f</Shortcut>
-      <Description>FROM ... AS</Description>
+      <Description>FROM</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>object</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-        <Literal>
-          <ID>alias</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-      </Declarations>
-      <Code Language="sql"><![CDATA[FROM $object$ AS $alias$]]></Code>
+      <Declarations />
+      <Code Language="sql"><![CDATA[FROM]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
