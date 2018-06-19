@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>lep</Title>
+      <Shortcut>lep</Shortcut>
+      <Description>fn_listextendedproperty</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip />
+          <Default>'MS_Description'</Default>
+        </Literal>
+        <Literal>
+          <ID>level0type</ID>
+          <ToolTip />
+          <Default>'SCHEMA'</Default>
+        </Literal>
+        <Literal>
+          <ID>level0name</ID>
+          <ToolTip />
+          <Default>'dbo'</Default>
+        </Literal>
+        <Literal>
+          <ID>level1type</ID>
+          <ToolTip />
+          <Default>'TABLE'</Default>
+        </Literal>
+        <Literal>
+          <ID>level1name</ID>
+          <ToolTip />
+          <Default>NULL</Default>
+        </Literal>
+        <Literal>
+          <ID>level2type</ID>
+          <ToolTip />
+          <Default>NULL</Default>
+        </Literal>
+        <Literal>
+          <ID>level2name</ID>
+          <ToolTip />
+          <Default>NULL</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT *
+FROM fn_listextendedproperty(
+	  $name$
+	, $level0type$
+	, $level0name$
+	, $level1type$
+	, $level1name$
+	, $level2type$
+	, $level2name$
+)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

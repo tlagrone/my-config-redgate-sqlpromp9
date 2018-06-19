@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sica</Title>
+      <Shortcut>sica</Shortcut>
+      <Description>sys.index_columns AS ic</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[sys.index_columns AS ic]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

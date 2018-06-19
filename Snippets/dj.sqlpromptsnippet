@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dj</Title>
+      <Shortcut>dj</Shortcut>
+      <Description>DISJOINT JOIN</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>object1</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>alias1</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>object2</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>alias2</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>columns</ID>
+          <ToolTip />
+          <Default>*</Default>
+        </Literal>
+        <Literal>
+          <ID>match_condition</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT $columns$
+FROM $object1$ AS $alias1$
+OUTER JOIN $object2$ AS $alias2$
+	ON $match_condition$
+EXCEPT
+SELECT $columns$
+FROM $object1$ AS $alias1$
+INNER JOIN $object2$ AS $alias2$
+	ON $match_condition$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

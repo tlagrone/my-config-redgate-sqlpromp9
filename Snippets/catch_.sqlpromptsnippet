@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>catch_</Title>
+      <Shortcut>catch_</Shortcut>
+      <Description>surround with CATCH</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[BEGIN CATCH
+	$SELECTEDTEXT$
+END CATCH]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

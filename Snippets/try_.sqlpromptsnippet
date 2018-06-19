@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>try_</Title>
+      <Shortcut>try_</Shortcut>
+      <Description>surround with TRY</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[BEGIN TRY
+	$SELECTEDTEXT$
+END TRY]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>soa</Title>
+      <Shortcut>soa</Shortcut>
+      <Description>sys.objects AS obj</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[sys.objects AS obj]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>if_</Title>
+      <Shortcut>if_</Shortcut>
+      <Description>surround with IF</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>condition</ID>
+          <ToolTip />
+          <Default>1 = 1</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[IF $condition$ BEGIN
+    $SELECTEDTEXT$$CURSOR$
+END]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

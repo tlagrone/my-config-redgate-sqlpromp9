@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>eq</Title>
+      <Shortcut>eq</Shortcut>
+      <Description>EQUIVALENT boolean logical comparison operator</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>condition1</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>condition2</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[($condition1$ AND $condition2$) OR (NOT $condition1$ AND NOT $condition2$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

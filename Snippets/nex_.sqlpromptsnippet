@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>nex_</Title>
+      <Shortcut>nex_</Shortcut>
+      <Description>surround with NOT EXISTS</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[NOT EXISTS($SELECTEDTEXT$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

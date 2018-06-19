@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>nq</Title>
+      <Shortcut>nq</Shortcut>
+      <Description>nested query</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>nested_query</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>alias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[(
+	$nested_query$
+) AS $alias$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

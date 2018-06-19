@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>nrj</Title>
+      <Shortcut>nrj</Shortcut>
+      <Description>NATURAL RIGHT JOIN</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>object</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>alias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>other</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>column</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[RIGHT JOIN $object$ AS $alias$
+	ON	$alias$.$column$ = $other$.$column$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

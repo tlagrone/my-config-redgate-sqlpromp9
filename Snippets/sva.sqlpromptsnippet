@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sva</Title>
+      <Shortcut>sva</Shortcut>
+      <Description>sys.views AS vw</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[sys.views AS vw]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sj</Title>
+      <Shortcut>sj</Shortcut>
+      <Description>SEMI JOIN</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>object</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>alias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>match_condition</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[WHERE EXISTS(
+	SELECT 0
+	FROM $object$ AS $alias$
+	WHERE $match_condition$
+)	]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sdf</Title>
+      <Shortcut>sdf</Shortcut>
+      <Description>SELECT DISTINCT ... FROM</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>object</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>columns</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT DISTINCT $columns$ FROM $object$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sic</Title>
+      <Shortcut>sic</Shortcut>
+      <Description>sys.index_columns</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[sys.index_columns]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

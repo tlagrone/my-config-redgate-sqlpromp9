@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>cte_</Title>
+      <Shortcut>cte_</Shortcut>
+      <Description>surround with Common Table Expression</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>cte_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[	$cte_name$ AS (
+		$SELECTEDTEXT$
+	)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sf</Title>
+      <Shortcut>sf</Shortcut>
+      <Description>SELECT ... FROM fragment</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>object</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>alias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>columns</ID>
+          <ToolTip />
+          <Default>*</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT
+	$columns$
+FROM $object$ AS $alias$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

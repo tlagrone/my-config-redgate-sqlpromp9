@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>w_</Title>
+      <Shortcut>w_</Shortcut>
+      <Description>surround with WITH</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>cte_name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[WITH
+	$cte_name$ AS (
+		$SELECTEDTEXT$
+	)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

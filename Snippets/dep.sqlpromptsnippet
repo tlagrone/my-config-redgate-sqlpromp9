@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>dep</Title>
+      <Shortcut>dep</Shortcut>
+      <Description>sp_dropextendedproperty</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>name</ID>
+          <ToolTip />
+          <Default>'MS_Description'</Default>
+        </Literal>
+        <Literal>
+          <ID>level0type</ID>
+          <ToolTip />
+          <Default>'SCHEMA'</Default>
+        </Literal>
+        <Literal>
+          <ID>level0name</ID>
+          <ToolTip />
+          <Default>'dbo'</Default>
+        </Literal>
+        <Literal>
+          <ID>level1type</ID>
+          <ToolTip />
+          <Default>'TABLE'</Default>
+        </Literal>
+        <Literal>
+          <ID>level1name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>level2type</ID>
+          <ToolTip />
+          <Default>'COLUMN'</Default>
+        </Literal>
+        <Literal>
+          <ID>level2name</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[EXEC sp_dropextendedproperty(
+	  @name = $name$
+	, @level0type = $level0type$
+	, @level0name = $level0name$
+	, @level1type = $level1type$
+	, @level1name = $level1name$
+	, @level2type = $level2type$
+	, @level2name = $level2name$
+)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

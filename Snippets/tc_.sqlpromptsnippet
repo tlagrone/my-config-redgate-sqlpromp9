@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>tc_</Title>
+      <Shortcut>tc_</Shortcut>
+      <Description>surround with TRY ... CATCH</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[BEGIN TRY
+	$SELECTEDTEXT$
+END TRY
+BEGIN CATCH
+    $SELECTIONSTART$SELECT
+    	  ERROR_NUMBER() AS ErrorNumber  
+    	, ERROR_SEVERITY() AS ErrorSeverity  
+    	, ERROR_STATE() AS ErrorState  
+   		, ERROR_PROCEDURE() AS ErrorProcedure  
+    	, ERROR_LINE() AS ErrorLine  
+    	, ERROR_MESSAGE() AS ErrorMessage$SELECTIONEND$
+END CATCH]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

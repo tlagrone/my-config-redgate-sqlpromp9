@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>rj</Title>
+      <Shortcut>rj</Shortcut>
+      <Description>RECURSIVE JOIN</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>table_alias</ID>
+          <ToolTip />
+          <Default>f</Default>
+        </Literal>
+        <Literal>
+          <ID>seed_value</ID>
+          <ToolTip />
+          <Default>1</Default>
+        </Literal>
+        <Literal>
+          <ID>value_alias</ID>
+          <ToolTip />
+          <Default>n</Default>
+        </Literal>
+        <Literal>
+          <ID>function_of_value_alias</ID>
+          <ToolTip />
+          <Default>n + 1</Default>
+        </Literal>
+        <Literal>
+          <ID>terminating_condition_over_value_alias</ID>
+          <ToolTip />
+          <Default>n &lt; 100</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[WITH  -- define the recursive "do...while" loop
+	$table_alias$ AS (
+		SELECT $seed_value$ AS $value_alias$  -- initialize the loop variable
+		UNION ALL
+		SELECT $function_of_value_alias$  -- output the next value *AND* advance the loop variable
+		FROM $table_alias$  -- recurse
+		WHERE $terminating_condition_over_value_alias$  -- test the "do...while" loop condition
+	)
+SELECT * FROM $table_alias$  -- execute the loop]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

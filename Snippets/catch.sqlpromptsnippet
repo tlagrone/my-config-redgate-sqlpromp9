@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>catch</Title>
+      <Shortcut>catch</Shortcut>
+      <Description>CATCH</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[BEGIN CATCH
+	$SELECTIONSTART$SELECT
+    	  ERROR_NUMBER() AS ErrorNumber  
+    	, ERROR_SEVERITY() AS ErrorSeverity  
+    	, ERROR_STATE() AS ErrorState  
+   		, ERROR_PROCEDURE() AS ErrorProcedure  
+    	, ERROR_LINE() AS ErrorLine  
+    	, ERROR_MESSAGE() AS ErrorMessage$SELECTIONEND$
+END CATCH]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

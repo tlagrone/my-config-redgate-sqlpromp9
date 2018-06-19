@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>sfk</Title>
+      <Shortcut>sfk</Shortcut>
+      <Description>sys.foreign_keys</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[sys.foreign_keys]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

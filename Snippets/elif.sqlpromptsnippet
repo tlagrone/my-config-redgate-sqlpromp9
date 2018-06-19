@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>elif</Title>
+      <Shortcut>elif</Shortcut>
+      <Description>ELSE ... IF</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>condition</ID>
+          <ToolTip />
+          <Default>1 = 1</Default>
+        </Literal>
+        <Literal>
+          <ID>cursor</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[ELSE IF $condition$ BEGIN
+	$cursor$
+END]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
