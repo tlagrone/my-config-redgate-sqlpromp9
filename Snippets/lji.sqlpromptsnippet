@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>lji</Title>
+      <Shortcut>lji</Shortcut>
+      <Description>LEFT JOIN sys.indexes (by way of sys.index_columns)</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[LEFT JOIN sys.index_columns AS ic
+        INNER JOIN sys.indexes AS idx
+            ON  idx.object_id = ic.object_id
+            AND idx.index_id  = ic.index_id
+        ON  ic.object_id = col.object_id
+        AND ic.column_id = col.column_id]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
