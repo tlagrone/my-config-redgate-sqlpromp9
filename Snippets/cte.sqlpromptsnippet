@@ -23,9 +23,9 @@
           <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[	$cte_name$ AS (
-		$cursor$
-	)
+      <Code Language="sql"><![CDATA[$cte_name$ AS (
+	$cursor$
+)
 ]]></Code>
     </Snippet>
   </CodeSnippet>
