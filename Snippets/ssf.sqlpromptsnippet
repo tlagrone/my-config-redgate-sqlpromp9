@@ -11,20 +11,9 @@
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>object</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-        <Literal>
-          <ID>alias</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-      </Declarations>
+      <Declarations />
       <Code Language="sql"><![CDATA[SELECT *
-FROM $object$ AS $alias$]]></Code>
+FROM ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
