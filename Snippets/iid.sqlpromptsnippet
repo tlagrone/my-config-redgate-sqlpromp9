@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[[index_id]]]></Code>
+      <Code Language="sql"><![CDATA[index_id]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
