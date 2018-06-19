@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sfka</Title>
-      <Shortcut>sfka</Shortcut>
-      <Description>sys.foreign_keys AS fk</Description>
+      <Title>soas</Title>
+      <Shortcut>soas</Shortcut>
+      <Description>sys.objects AS obj</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.foreign_keys AS fk]]></Code>
+      <Code Language="sql"><![CDATA[sys.objects AS obj]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

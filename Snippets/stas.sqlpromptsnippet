@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sica</Title>
-      <Shortcut>sica</Shortcut>
-      <Description>sys.index_columns AS ic</Description>
+      <Title>stas</Title>
+      <Shortcut>stas</Shortcut>
+      <Description>sys.tables AS tbl</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.index_columns AS ic]]></Code>
+      <Code Language="sql"><![CDATA[sys.tables AS tbl]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sca</Title>
-      <Shortcut>sca</Shortcut>
-      <Description>sys.columns AS col</Description>
+      <Title>sias</Title>
+      <Shortcut>sias</Shortcut>
+      <Description>sys.indexes AS idx</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.columns AS col]]></Code>
+      <Code Language="sql"><![CDATA[sys.indexes AS idx]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

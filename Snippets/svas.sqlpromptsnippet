@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sia</Title>
-      <Shortcut>sia</Shortcut>
-      <Description>sys.indexes AS idx</Description>
+      <Title>svas</Title>
+      <Shortcut>svas</Shortcut>
+      <Description>sys.views AS vw</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.indexes AS idx]]></Code>
+      <Code Language="sql"><![CDATA[sys.views AS vw]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

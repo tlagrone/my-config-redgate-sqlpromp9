@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>soa</Title>
-      <Shortcut>soa</Shortcut>
-      <Description>sys.objects AS obj</Description>
+      <Title>sicas</Title>
+      <Shortcut>sicas</Shortcut>
+      <Description>sys.index_columns AS ic</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.objects AS obj]]></Code>
+      <Code Language="sql"><![CDATA[sys.index_columns AS ic]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

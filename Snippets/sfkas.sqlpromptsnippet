@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sfkca</Title>
-      <Shortcut>sfkca</Shortcut>
-      <Description>sys.foreign_key_columns AS fkc</Description>
+      <Title>sfkas</Title>
+      <Shortcut>sfkas</Shortcut>
+      <Description>sys.foreign_keys AS fk</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.foreign_key_columns AS fkc]]></Code>
+      <Code Language="sql"><![CDATA[sys.foreign_keys AS fk]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

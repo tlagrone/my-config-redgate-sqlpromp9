@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sta</Title>
-      <Shortcut>sta</Shortcut>
-      <Description>sys.tables AS tbl</Description>
+      <Title>scas</Title>
+      <Shortcut>scas</Shortcut>
+      <Description>sys.columns AS col</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.tables AS tbl]]></Code>
+      <Code Language="sql"><![CDATA[sys.columns AS col]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

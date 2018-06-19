@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sva</Title>
-      <Shortcut>sva</Shortcut>
-      <Description>sys.views AS vw</Description>
+      <Title>ssas</Title>
+      <Shortcut>ssas</Shortcut>
+      <Description>sys.schemas AS sch</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.views AS vw]]></Code>
+      <Code Language="sql"><![CDATA[sys.schemas AS sch]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
