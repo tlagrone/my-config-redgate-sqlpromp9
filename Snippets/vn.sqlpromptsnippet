@@ -4,7 +4,7 @@
     <Header>
       <Title>vn</Title>
       <Shortcut>vn</Shortcut>
-      <Description>vw.[name]</Description>
+      <Description>vw.name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[vw.[name]]]></Code>
+      <Code Language="sql"><![CDATA[vw.name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

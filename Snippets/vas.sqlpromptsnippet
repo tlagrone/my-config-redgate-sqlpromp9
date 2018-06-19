@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>st</Title>
-      <Shortcut>st</Shortcut>
-      <Description>sys.tables</Description>
+      <Title>vas</Title>
+      <Shortcut>vas</Shortcut>
+      <Description>sys.views AS vw</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.tables]]></Code>
+      <Code Language="sql"><![CDATA[sys.views AS vw]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

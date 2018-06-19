@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>so</Title>
-      <Shortcut>so</Shortcut>
-      <Description>sys.objects</Description>
+      <Title>tas</Title>
+      <Shortcut>tas</Shortcut>
+      <Description>sys.tables AS tbl</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.objects]]></Code>
+      <Code Language="sql"><![CDATA[sys.tables AS tbl]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

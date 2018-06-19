@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ssas</Title>
-      <Shortcut>ssas</Shortcut>
-      <Description>sys.schemas AS sch</Description>
+      <Title>cas</Title>
+      <Shortcut>cas</Shortcut>
+      <Description>sys.columns AS col</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.schemas AS sch]]></Code>
+      <Code Language="sql"><![CDATA[sys.columns AS col]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

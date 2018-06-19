@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sv</Title>
-      <Shortcut>sv</Shortcut>
-      <Description>sys.views</Description>
+      <Title>fkcas</Title>
+      <Shortcut>fkcas</Shortcut>
+      <Description>sys.foreign_key_columns AS fkc</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.views]]></Code>
+      <Code Language="sql"><![CDATA[sys.foreign_key_columns AS fkc]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

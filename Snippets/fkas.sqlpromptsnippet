@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sfkas</Title>
-      <Shortcut>sfkas</Shortcut>
+      <Title>fkas</Title>
+      <Shortcut>fkas</Shortcut>
       <Description>sys.foreign_keys AS fk</Description>
       <Author />
       <SnippetTypes>

@@ -4,7 +4,7 @@
     <Header>
       <Title>sn</Title>
       <Shortcut>sn</Shortcut>
-      <Description>sch.[name]</Description>
+      <Description>sch.name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sch.[name]]]></Code>
+      <Code Language="sql"><![CDATA[sch.name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

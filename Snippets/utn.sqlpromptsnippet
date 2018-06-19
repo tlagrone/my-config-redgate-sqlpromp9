@@ -4,7 +4,7 @@
     <Header>
       <Title>utn</Title>
       <Shortcut>utn</Shortcut>
-      <Description>typ.[name]</Description>
+      <Description>typ.name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[typ.[name]]]></Code>
+      <Code Language="sql"><![CDATA[typ.name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

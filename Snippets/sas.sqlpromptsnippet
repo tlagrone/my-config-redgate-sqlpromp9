@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ep</Title>
-      <Shortcut>ep</Shortcut>
-      <Description>SYS.EXTENDED_PROPERTIES</Description>
+      <Title>sas</Title>
+      <Shortcut>sas</Shortcut>
+      <Description>sys.schemas AS sch</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SYS.EXTENDED_PROPERTIES]]></Code>
+      <Code Language="sql"><![CDATA[sys.schemas AS sch]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

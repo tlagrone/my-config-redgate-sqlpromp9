@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sutas</Title>
-      <Shortcut>sutas</Shortcut>
-      <Description>sys.types AS typ</Description>
+      <Title>ias</Title>
+      <Shortcut>ias</Shortcut>
+      <Description>sys.indexes AS idx</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.types AS typ]]></Code>
+      <Code Language="sql"><![CDATA[sys.indexes AS idx]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

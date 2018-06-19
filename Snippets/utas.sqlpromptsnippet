@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sfkc</Title>
-      <Shortcut>sfkc</Shortcut>
-      <Description>sys.foreign_key_columns</Description>
+      <Title>utas</Title>
+      <Shortcut>utas</Shortcut>
+      <Description>sys.types AS typ</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.foreign_key_columns]]></Code>
+      <Code Language="sql"><![CDATA[sys.types AS typ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

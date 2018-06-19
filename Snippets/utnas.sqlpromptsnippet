@@ -4,7 +4,7 @@
     <Header>
       <Title>utnas</Title>
       <Shortcut>utnas</Shortcut>
-      <Description>typ.[name] AS [type_name]</Description>
+      <Description>typ.name AS type_name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[typ.[name] AS [type_name]]]></Code>
+      <Code Language="sql"><![CDATA[typ.name AS type_name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

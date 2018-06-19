@@ -4,7 +4,7 @@
     <Header>
       <Title>snas</Title>
       <Shortcut>snas</Shortcut>
-      <Description>sch.[name] AS [schema_name]</Description>
+      <Description>sch.name AS schema_name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sch.[name] AS [schema_name]]]></Code>
+      <Code Language="sql"><![CDATA[sch.name AS schema_name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -4,7 +4,7 @@
     <Header>
       <Title>tnas</Title>
       <Shortcut>tnas</Shortcut>
-      <Description>tbl.[name] AS [table_name]</Description>
+      <Description>tbl.name AS table_name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[tbl.[name] AS [table_name]]]></Code>
+      <Code Language="sql"><![CDATA[tbl.name AS table_name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -4,7 +4,7 @@
     <Header>
       <Title>onas</Title>
       <Shortcut>onas</Shortcut>
-      <Description>obj.[name] AS [object_name]</Description>
+      <Description>obj.name AS object_name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[obj.[name] AS [object_name]]]></Code>
+      <Code Language="sql"><![CDATA[obj.name AS object_name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

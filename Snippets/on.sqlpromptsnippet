@@ -4,7 +4,7 @@
     <Header>
       <Title>on</Title>
       <Shortcut>on</Shortcut>
-      <Description>obj.[name]</Description>
+      <Description>obj.name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[obj.[name]]]></Code>
+      <Code Language="sql"><![CDATA[obj.name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
