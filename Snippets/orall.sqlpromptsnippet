@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>orall</Title>
+      <Shortcut>orall</Shortcut>
+      <Description>OR ( ... )</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[OR (
+	$CURSOR$
+)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
