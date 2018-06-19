@@ -4,29 +4,15 @@
     <Header>
       <Title>w</Title>
       <Shortcut>w</Shortcut>
-      <Description>WITH</Description>
+      <Description>WHERE</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>cte_name</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-        <Literal>
-          <ID>cursor</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-      </Declarations>
-      <Code Language="sql"><![CDATA[WITH
-	$cte_name$ AS (
-		$cursor$
-	)]]></Code>
+      <Declarations />
+      <Code Language="sql"><![CDATA[WHERE]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
