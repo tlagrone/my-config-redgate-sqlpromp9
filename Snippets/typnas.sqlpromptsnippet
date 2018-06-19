@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>typnas</Title>
+      <Shortcut>typnas</Shortcut>
+      <Description>typ.[name] AS [type_name]</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[typ.[name] AS [type_name]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
