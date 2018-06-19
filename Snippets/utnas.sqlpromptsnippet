@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>typnas</Title>
-      <Shortcut>typnas</Shortcut>
+      <Title>utnas</Title>
+      <Shortcut>utnas</Shortcut>
       <Description>typ.[name] AS [type_name]</Description>
       <Author />
       <SnippetTypes>

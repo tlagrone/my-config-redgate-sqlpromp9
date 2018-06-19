@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>stypas</Title>
-      <Shortcut>stypas</Shortcut>
-      <Description>sys.types AS typ</Description>
+      <Title>sut</Title>
+      <Shortcut>sut</Shortcut>
+      <Description>sys.types</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.types AS typ]]></Code>
+      <Code Language="sql"><![CDATA[sys.types]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
