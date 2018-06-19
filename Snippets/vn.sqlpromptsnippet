@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>vn</Title>
+      <Shortcut>vn</Shortcut>
+      <Description>vw.[name]</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations />
+      <Code Language="sql"><![CDATA[vw.[name]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
