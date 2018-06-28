@@ -4,7 +4,7 @@
     <Header>
       <Title>nn</Title>
       <Shortcut>nn</Shortcut>
-      <Description>NOT NULL</Description>
+      <Description>NOT NULL fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>

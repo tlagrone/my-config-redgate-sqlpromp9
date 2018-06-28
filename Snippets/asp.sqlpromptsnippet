@@ -4,7 +4,7 @@
     <Header>
       <Title>asp</Title>
       <Shortcut>asp</Shortcut>
-      <Description>ALTER PROCEDURE</Description>
+      <Description>ALTER PROCEDURE fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>

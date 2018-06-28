@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>on</Title>
-      <Shortcut>on</Shortcut>
-      <Description>obj.name</Description>
+      <Title>ss</Title>
+      <Shortcut>ss</Shortcut>
+      <Description>SELECT * fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[obj.name]]></Code>
+      <Code Language="sql"><![CDATA[SELECT * ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

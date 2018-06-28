@@ -4,7 +4,7 @@
     <Header>
       <Title>w</Title>
       <Shortcut>w</Shortcut>
-      <Description>WHERE</Description>
+      <Description>WHERE fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[WHERE]]></Code>
+      <Code Language="sql"><![CDATA[WHERE ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

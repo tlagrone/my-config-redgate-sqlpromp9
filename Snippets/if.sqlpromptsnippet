@@ -20,7 +20,7 @@
       </Declarations>
       <Code Language="sql"><![CDATA[IF $condition$ BEGIN
 	$CURSOR$
-END;]]></Code>
+END]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

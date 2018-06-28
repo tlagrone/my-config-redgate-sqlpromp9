@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[NOT EXISTS($SELECTEDTEXT$)]]></Code>
+      <Code Language="sql"><![CDATA[NOT EXISTS($SELECTEDTEXT$) $CURSOR$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

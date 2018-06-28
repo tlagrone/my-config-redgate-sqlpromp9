@@ -4,7 +4,7 @@
     <Header>
       <Title>ctr</Title>
       <Shortcut>ctr</Shortcut>
-      <Description>COMMIT TRANSACTION</Description>
+      <Description>COMMIT TRANSACTION statement</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,9 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[COMMIT TRANSACTION ]]></Code>
+      <Code Language="sql"><![CDATA[COMMIT TRANSACTION;
+
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

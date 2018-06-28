@@ -22,7 +22,7 @@
 	$CURSOR$
 END ELSE
 	$CURSOR$
-END]]></Code>
+END;]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -13,17 +13,19 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>object</ID>
+          <ID>table_source</ID>
           <ToolTip />
           <Default />
         </Literal>
         <Literal>
           <ID>columns</ID>
           <ToolTip />
-          <Default />
+          <Default>*</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT DISTINCT $columns$ FROM $object$]]></Code>
+      <Code Language="sql"><![CDATA[SELECT DISTINCT
+	$columns$
+FROM $table_source$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

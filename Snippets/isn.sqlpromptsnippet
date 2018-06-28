@@ -4,7 +4,7 @@
     <Header>
       <Title>isn</Title>
       <Shortcut>isn</Shortcut>
-      <Description>IS NULL</Description>
+      <Description>IS NULL fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>

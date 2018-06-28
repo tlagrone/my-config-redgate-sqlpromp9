@@ -4,31 +4,15 @@
     <Header>
       <Title>oa</Title>
       <Shortcut>oa</Shortcut>
-      <Description>OUTER APPLY</Description>
+      <Description>OUTER APPLY fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>table_valued_function</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-        <Literal>
-          <ID>left_table_column</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-        <Literal>
-          <ID>alias</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-      </Declarations>
-      <Code Language="sql"><![CDATA[OUTER APPLY $table_valued_function$($left_table_column$) AS $alias$]]></Code>
+      <Declarations />
+      <Code Language="sql"><![CDATA[OUTER APPLY ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

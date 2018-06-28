@@ -4,26 +4,15 @@
     <Header>
       <Title>df</Title>
       <Shortcut>df</Shortcut>
-      <Description>DELETE FROM</Description>
+      <Description>DELETE FROM fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>object</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-        <Literal>
-          <ID>condition</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-      </Declarations>
-      <Code Language="sql"><![CDATA[DELETE FROM $object$ WHERE $condition$]]></Code>
+      <Declarations />
+      <Code Language="sql"><![CDATA[DELETE FROM ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

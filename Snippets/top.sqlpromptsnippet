@@ -13,17 +13,18 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>cardinality</ID>
-          <ToolTip />
-          <Default>100</Default>
-        </Literal>
-        <Literal>
-          <ID>object</ID>
+          <ID>table_source</ID>
           <ToolTip />
           <Default />
         </Literal>
+        <Literal>
+          <ID>count_or_percent</ID>
+          <ToolTip />
+          <Default>100</Default>
+        </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT TOP $cardinality$ * FROM $object$]]></Code>
+      <Code Language="sql"><![CDATA[SELECT TOP $count_or_percent$ *
+FROM $table_source$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

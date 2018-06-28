@@ -4,26 +4,15 @@
     <Header>
       <Title>cj</Title>
       <Shortcut>cj</Shortcut>
-      <Description>CROSS JOIN</Description>
+      <Description>CROSS JOIN fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
       </SnippetTypes>
     </Header>
     <Snippet>
-      <Declarations>
-        <Literal>
-          <ID>object</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-        <Literal>
-          <ID>alias</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
-      </Declarations>
-      <Code Language="sql"><![CDATA[CROSS JOIN $object$ AS $alias$]]></Code>
+      <Declarations />
+      <Code Language="sql"><![CDATA[CROSS JOIN ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

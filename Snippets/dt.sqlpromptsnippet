@@ -4,7 +4,7 @@
     <Header>
       <Title>dt</Title>
       <Shortcut>dt</Shortcut>
-      <Description>DROP TABLE</Description>
+      <Description>DROP TABLE fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[DROP TABLE ]]></Code>
+      <Code Language="sql"><![CDATA[DROP TABLE  ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

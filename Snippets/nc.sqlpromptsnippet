@@ -4,7 +4,7 @@
     <Header>
       <Title>nc</Title>
       <Shortcut>nc</Shortcut>
-      <Description>SET NOCOUNT</Description>
+      <Description>SET NOCOUNT OFF</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,10 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SET NOCOUNT]]></Code>
+      <Code Language="sql"><![CDATA[SET NOCOUNT OFF;
+GO
+
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

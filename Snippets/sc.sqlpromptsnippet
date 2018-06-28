@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>star</Title>
-      <Shortcut>star</Shortcut>
-      <Description>SELECT *</Description>
+      <Title>sc</Title>
+      <Shortcut>sc</Shortcut>
+      <Description>SELECT COUNT(...)</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT *]]></Code>
+      <Code Language="sql"><![CDATA[SELECT COUNT($CURSOR$)]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

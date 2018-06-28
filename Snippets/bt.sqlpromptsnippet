@@ -4,7 +4,7 @@
     <Header>
       <Title>bt</Title>
       <Shortcut>bt</Shortcut>
-      <Description>BEGIN TRANSACTION</Description>
+      <Description>BEGIN TRANSACTION statment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,9 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[BEGIN TRANSACTION ]]></Code>
+      <Code Language="sql"><![CDATA[BEGIN TRANSACTION;
+
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

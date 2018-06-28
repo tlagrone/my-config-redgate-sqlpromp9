@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[OUTER JOIN]]></Code>
+      <Code Language="sql"><![CDATA[OUTER JOIN ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

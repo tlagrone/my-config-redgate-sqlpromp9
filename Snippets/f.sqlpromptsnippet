@@ -4,7 +4,7 @@
     <Header>
       <Title>f</Title>
       <Shortcut>f</Shortcut>
-      <Description>FROM</Description>
+      <Description>FROM fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[FROM]]></Code>
+      <Code Language="sql"><![CDATA[FROM ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -4,7 +4,7 @@
     <Header>
       <Title>dv</Title>
       <Shortcut>dv</Shortcut>
-      <Description>DROP VIEW</Description>
+      <Description>DROP VIEW fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[DROP VIEW ]]></Code>
+      <Code Language="sql"><![CDATA[DROP VIEW  ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -4,7 +4,7 @@
     <Header>
       <Title>dd</Title>
       <Shortcut>dd</Shortcut>
-      <Description>DROP DATABASE</Description>
+      <Description>DROP DATABASE fragment</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[DROP DATABASE ]]></Code>
+      <Code Language="sql"><![CDATA[DROP DATABASE  ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -13,12 +13,13 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>object</ID>
+          <ID>table_source</ID>
           <ToolTip />
           <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT COUNT(*) FROM $object$]]></Code>
+      <Code Language="sql"><![CDATA[SELECT COUNT(*)
+FROM $table_source$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

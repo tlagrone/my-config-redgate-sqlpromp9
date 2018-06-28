@@ -4,7 +4,7 @@
     <Header>
       <Title>sfw</Title>
       <Shortcut>sfw</Shortcut>
-      <Description>SELECT ... FROM ... WHERE fragment</Description>
+      <Description>SELECT ... FROM ... WHERE</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,7 +13,12 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>object</ID>
+          <ID>table_source</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>conditions</ID>
           <ToolTip />
           <Default />
         </Literal>
@@ -22,13 +27,12 @@
           <ToolTip />
           <Default>*</Default>
         </Literal>
-        <Literal>
-          <ID>condition</ID>
-          <ToolTip />
-          <Default>1=1</Default>
-        </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT $columns$ FROM $object$ WHERE $condition$]]></Code>
+      <Code Language="sql"><![CDATA[SELECT
+	$columns$
+FROM $table_source$
+WHERE
+	$conditions$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>dl</Title>
-      <Shortcut>dl</Shortcut>
-      <Description>DROP LOGIN fragment</Description>
+      <Title>onm</Title>
+      <Shortcut>onm</Shortcut>
+      <Description>obj.name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[DROP LOGIN  ]]></Code>
+      <Code Language="sql"><![CDATA[obj.name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

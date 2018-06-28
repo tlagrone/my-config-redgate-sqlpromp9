@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[GROUP BY]]></Code>
+      <Code Language="sql"><![CDATA[GROUP BY ]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

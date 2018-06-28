@@ -12,7 +12,8 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[EXEC sp_helptext]]></Code>
+      <Code Language="sql"><![CDATA[EXEC sp_helptext;
+]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

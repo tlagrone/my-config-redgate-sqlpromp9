@@ -4,7 +4,7 @@
     <Header>
       <Title>sfg</Title>
       <Shortcut>sfg</Shortcut>
-      <Description>SELECT ... FROM ... GROUP BY fragment</Description>
+      <Description>SELECT ... FROM ... GROUP BY</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,7 +13,7 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>object</ID>
+          <ID>table_source</ID>
           <ToolTip />
           <Default />
         </Literal>
@@ -25,12 +25,14 @@
         <Literal>
           <ID>columns</ID>
           <ToolTip />
-          <Default />
+          <Default>*</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT $columns$
-FROM $object$
-GROUP BY $grouping_columns$]]></Code>
+      <Code Language="sql"><![CDATA[SELECT
+	$columns$
+FROM $table_source$
+GROUP BY
+	$grouping_columns$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

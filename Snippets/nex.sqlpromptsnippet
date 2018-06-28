@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sall</Title>
-      <Shortcut>sall</Shortcut>
-      <Description>SELECT *</Description>
+      <Title>nex</Title>
+      <Shortcut>nex</Shortcut>
+      <Description>NOT EXISTS(...)</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[SELECT *]]></Code>
+      <Code Language="sql"><![CDATA[NOT EXISTS($CURSOR$)]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
