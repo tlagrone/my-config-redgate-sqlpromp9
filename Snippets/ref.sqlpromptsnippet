@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>ref</Title>
+      <Shortcut>ref</Shortcut>
+      <Description>Object --[Referenced]--&gt; (&lt;Object, Column&gt;)*</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>TargetSchemaName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>TargetObjectName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>TargetColumnName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT
+	src_sch.name AS referencing_schema_name,
+    src_obj.type_desc AS referencing_object_type_desc,
+    src_obj.name AS referencing_object_name,
+    tar_sch.name AS referenced_schema_name,
+    tar_obj.type_desc AS referenced_object_type_desc,
+    tar_obj.name AS referenced_object_name,
+    tar_col.name AS referenced_column_name
+FROM sys.schemas AS src_sch
+    INNER JOIN sys.objects AS src_obj
+        ON  src_obj.schema_id = src_sch.schema_id
+    CROSS APPLY sys.dm_sql_referenced_entities(src_sch.name + '.' + src_obj.name, N'OBJECT') AS ref
+    INNER JOIN sys.schemas AS tar_sch   
+        ON  (ref.referenced_schema_name IS NULL OR tar_sch.name = ref.referenced_schema_name)
+    INNER JOIN sys.objects AS tar_obj
+        ON  tar_obj.schema_id = tar_sch.schema_id
+        AND tar_obj.name = ref.referenced_entity_name
+    INNER JOIN sys.columns AS tar_col
+        ON  tar_col.object_id = tar_obj.object_id
+        AND tar_col.name = ref.referenced_minor_name
+
+WHERE
+	tar_sch.name IN ('$TargetSchemaName$')
+	AND tar_obj.name IN ('$TargetObjectName$')
+	AND tar_col.name IN ('$TargetColumnName$')
+ORDER BY
+	src_sch.name,
+	src_obj.type_desc,
+	src_obj.name]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
