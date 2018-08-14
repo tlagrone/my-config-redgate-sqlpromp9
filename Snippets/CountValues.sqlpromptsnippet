@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>CountValues</Title>
+      <Shortcut>CountValues</Shortcut>
+      <Description>Selects counts of `*`, `ALL`, `DISTINCT`, and `NULL` values of a column</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Table</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>Column</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT
+    '*' AS [count_type],
+    (SELECT COUNT($Column$) FROM $Table$) AS [count]
+UNION ALL
+SELECT
+	'ALL' AS [count_type],
+	(SELECT COUNT(ALL $Column$) FROM $Table$) AS [count]
+UNION ALL	
+SELECT
+    'DISTINCT' AS [count_type],
+    (SELECT COUNT(DISTINCT $Column$) FROM $Table$) AS [count]
+UNION ALL
+SELECT
+	'NULL' AS [count_type],
+	(SELECT COUNT(*) FROM $Table$ WHERE $Column$ IS NULL) AS [count]]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

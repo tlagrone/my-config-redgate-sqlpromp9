@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>CompareColumnNames</Title>
+      <Shortcut>CompareColumnNames</Shortcut>
+      <Description>Compares the overlap between the column names of multiple objects.</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>SchemaName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>FirstObjectName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>SecondObjectName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT
+	pivoted.column_name,
+	pivoted.[$FirstObjectName$],
+	pivoted.[$SecondObjectName$]
+FROM (
+        SELECT
+            obj.name AS object_name,
+            col.name AS column_name,
+            col.name as column_name2
+        FROM sys.schemas AS sch
+            INNER JOIN sys.objects AS obj
+                ON  obj.schema_id = sch.schema_id
+            INNER JOIN sys.columns AS col
+                ON  col.object_id = obj.object_id
+        WHERE sch.name = '$SchemaName$'
+            AND obj.name IN ('$FirstObjectName$', '$SecondObjectName$')
+    ) AS source
+PIVOT (
+        COUNT(source.column_name2)
+        FOR source.object_name IN ([$FirstObjectName$], [$SecondObjectName$])
+    ) AS pivoted
+ORDER BY pivoted.column_name;]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

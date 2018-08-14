@@ -17,15 +17,10 @@
           <ToolTip />
           <Default />
         </Literal>
-        <Literal>
-          <ID>cursor</ID>
-          <ToolTip />
-          <Default />
-        </Literal>
       </Declarations>
       <Code Language="sql"><![CDATA[WITH
 	$cte_name$ AS (
-		$cursor$
+		$CURSOR$
 	)]]></Code>
     </Snippet>
   </CodeSnippet>

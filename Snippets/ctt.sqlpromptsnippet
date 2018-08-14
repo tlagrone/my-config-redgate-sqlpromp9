@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sf</Title>
-      <Shortcut>sf</Shortcut>
-      <Description>SELECT ... FROM</Description>
+      <Title>ctt</Title>
+      <Shortcut>ctt</Shortcut>
+      <Description>Create TEMP Table</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,14 +13,17 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>TableName</ID>
+          <ID>table_name</ID>
           <ToolTip />
-          <Default />
+          <Default>tmpTable</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT
+      <Code Language="sql"><![CDATA[IF (OBJECT_ID(N'tempdb..#$table_name$') IS NOT NULL)
+	DROP TABLE #$table_name$;
+
+CREATE TABLE #$table_name$ (
 	$CURSOR$
-FROM $TableName$]]></Code>
+);]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

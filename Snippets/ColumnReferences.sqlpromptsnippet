@@ -2,8 +2,8 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ref</Title>
-      <Shortcut>ref</Shortcut>
+      <Title>ColumnReferences</Title>
+      <Shortcut>ColumnReferences</Shortcut>
       <Description>Object --[Referenced]--&gt; (&lt;Object, Column&gt;)*</Description>
       <Author />
       <SnippetTypes>
@@ -48,7 +48,6 @@ FROM sys.schemas AS src_sch
     INNER JOIN sys.columns AS tar_col
         ON  tar_col.object_id = tar_obj.object_id
         AND tar_col.name = ref.referenced_minor_name
-
 WHERE
 	tar_sch.name IN ('$TargetSchemaName$')
 	AND tar_obj.name IN ('$TargetObjectName$')
@@ -56,7 +55,7 @@ WHERE
 ORDER BY
 	src_sch.name,
 	src_obj.type_desc,
-	src_obj.name]]></Code>
+	src_obj.name;]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

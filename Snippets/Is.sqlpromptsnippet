@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ssf</Title>
-      <Shortcut>ssf</Shortcut>
-      <Description>SELECT * FROM</Description>
+      <Title>Is</Title>
+      <Shortcut>Is</Shortcut>
+      <Description>"Is" predicate</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,18 +13,22 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>table_source</ID>
+          <ID>Table</ID>
           <ToolTip />
           <Default />
         </Literal>
         <Literal>
-          <ID>columns</ID>
+          <ID>Column</ID>
           <ToolTip />
-          <Default>*</Default>
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>Predicate</ID>
+          <ToolTip />
+          <Default>IS NOT NULL</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT $columns$
-FROM $table_source$]]></Code>
+      <Code Language="sql"><![CDATA[IIF($Table$.$Column$ $Predicate$, 1, 0) AS is_$Column$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

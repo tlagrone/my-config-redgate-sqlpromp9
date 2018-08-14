@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>isSubset</Title>
+      <Shortcut>isSubset</Shortcut>
+      <Description>Queries whether the result of one query is a subset of the result of another query</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>SubsetQuery</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>SetQuery</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>SubsetName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>SetName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT
+	'$SubsetName$' AS A,
+	IIF(COUNT(*) = 0, 1, 0) AS is_subset_of,
+	'$SetName$' AS B
+FROM (
+        $SubsetQuery$
+        EXCEPT
+        $SetQuery$
+    ) AS subset_except_set]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

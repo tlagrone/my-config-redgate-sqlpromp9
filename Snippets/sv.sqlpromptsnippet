@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>lj</Title>
-      <Shortcut>lj</Shortcut>
-      <Description>LEFT JOIN fragment</Description>
+      <Title>sv</Title>
+      <Shortcut>sv</Shortcut>
+      <Description>$(sch) variable</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[LEFT JOIN]]></Code>
+      <Code Language="sql"><![CDATA[$(sch)]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

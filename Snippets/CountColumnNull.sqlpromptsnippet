@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>CountColumnNull</Title>
+      <Shortcut>CountColumnNull</Shortcut>
+      <Description>Count `NOT NULL`, `SOFT NULL`, and `NULL` of a Column</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Table</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>Column</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>SoftNulls</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT
+    'NOT NULL' AS [count_type],
+    COUNT(*) AS [count]
+FROM $Table$
+WHERE $Column$ IS NOT NULL
+UNION ALL
+SELECT
+    'SOFT NULL' AS [count_type],
+    COUNT(*) AS [count]
+FROM $Table$
+WHERE $Column$ IN ($SoftNulls$)
+UNION ALL
+SELECT
+    'NULL' AS [count_type],
+    COUNT(*) AS [count]
+FROM $Table$
+WHERE $Column$ IS NULL]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ssf</Title>
-      <Shortcut>ssf</Shortcut>
-      <Description>SELECT * FROM</Description>
+      <Title>IsUnique</Title>
+      <Shortcut>IsUnique</Shortcut>
+      <Description>Expression of whether a non-nullable column is unique</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,18 +13,17 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>table_source</ID>
+          <ID>Table</ID>
           <ToolTip />
           <Default />
         </Literal>
         <Literal>
-          <ID>columns</ID>
+          <ID>Column</ID>
           <ToolTip />
-          <Default>*</Default>
+          <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT $columns$
-FROM $table_source$]]></Code>
+      <Code Language="sql"><![CDATA[IIF(COUNT($Table$.$Column$) = COUNT(DISTINCT $Table$.$Column$), 1, 0) AS $Column$_is_unique]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

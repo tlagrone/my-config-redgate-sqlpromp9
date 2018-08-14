@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ssf</Title>
-      <Shortcut>ssf</Shortcut>
-      <Description>SELECT * FROM</Description>
+      <Title>SqlCmdHeader</Title>
+      <Shortcut>SqlCmdHeader</Shortcut>
+      <Description>SQLCMD header for a query.</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,18 +13,26 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>table_source</ID>
+          <ID>DatabaseName</ID>
           <ToolTip />
-          <Default />
+          <Default>DemoRNET</Default>
         </Literal>
         <Literal>
-          <ID>columns</ID>
+          <ID>SchemaName</ID>
           <ToolTip />
-          <Default>*</Default>
+          <Default>dbo</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT $columns$
-FROM $table_source$]]></Code>
+      <Code Language="sql"><![CDATA[:SetVar db "$DatabaseName$"
+:SetVar sch "$SchemaName$"
+
+SET NOCOUNT ON;
+USE $(db);
+GO
+
+
+
+$CURSOR$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

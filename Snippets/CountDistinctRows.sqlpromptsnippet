@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ssf</Title>
-      <Shortcut>ssf</Shortcut>
-      <Description>SELECT * FROM</Description>
+      <Title>CountDistinctRows</Title>
+      <Shortcut>CountDistinctRows</Shortcut>
+      <Description>Counts distinct rows in a table</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,18 +13,21 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>table_source</ID>
+          <ID>Schema</ID>
           <ToolTip />
           <Default />
         </Literal>
         <Literal>
-          <ID>columns</ID>
+          <ID>Table</ID>
           <ToolTip />
-          <Default>*</Default>
+          <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT $columns$
-FROM $table_source$]]></Code>
+      <Code Language="sql"><![CDATA[SELECT COUNT(*)
+FROM (
+		SELECT DISTINCT *
+		FROM $Schema$.$Table$
+	) [distinct]]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

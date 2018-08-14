@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sf</Title>
-      <Shortcut>sf</Shortcut>
-      <Description>SELECT ... FROM</Description>
+      <Title>CountRows</Title>
+      <Shortcut>CountRows</Shortcut>
+      <Description>Selects the counts of `ALL` and `DISTINCT` rows of a table</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,14 +13,20 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>TableName</ID>
+          <ID>Table</ID>
           <ToolTip />
           <Default />
         </Literal>
       </Declarations>
       <Code Language="sql"><![CDATA[SELECT
-	$CURSOR$
-FROM $TableName$]]></Code>
+    'ALL' AS [count_type],
+    COUNT(*) AS [count]
+FROM (SELECT ALL * FROM $Table$) AS all_
+UNION ALL
+SELECT
+    'DISTINCT' AS [count_type],
+    COUNT(*) AS [count]
+FROM (SELECT DISTINCT * FROM $Table$) AS distinct_]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

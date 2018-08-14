@@ -4,7 +4,7 @@
     <Header>
       <Title>dj</Title>
       <Shortcut>dj</Shortcut>
-      <Description>DISJOINT JOIN</Description>
+      <Description>DISJUNCTIVE JOIN</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>

@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[ORDER BY ]]></Code>
+      <Code Language="sql"><![CDATA[ORDER BY]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

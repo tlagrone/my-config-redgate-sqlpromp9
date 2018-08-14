@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>WhereGroup</Title>
+      <Shortcut>WhereGroup</Shortcut>
+      <Description>Filter a query by a grouped version of that query</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>GroupedTableAlias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>TableName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>TableAlias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>GroupingColumn</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>AggregateFunction</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>GroupedColumn</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>PredicateFragment</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[WITH
+    $GroupedTableAlias$ AS (
+        SELECT
+        	$TableAlias$.$GroupingColumn$,
+        	$AggregateFunction$($TableAlias$.$GroupedColumn$) AS $AggregateFunction$_$GroupedColumn$ 
+        FROM $TableName$ AS $TableAlias$
+        GROUP BY $TableAlias$.$GroupingColumn$
+        HAVING $AggregateFunction$($TableAlias$.$GroupedColumn$) $PredicateFragment$
+    )
+SELECT $TableAlias$.*
+FROM $TableName$ AS $TableAlias$
+    INNER JOIN $GroupedTableAlias$
+        ON  $GroupedTableAlias$.$GroupingColumn$ = $TableAlias$.$GroupingColumn$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

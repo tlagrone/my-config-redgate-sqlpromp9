@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>aj</Title>
-      <Shortcut>aj</Shortcut>
-      <Description>ANTI JOIN</Description>
+      <Title>ColumnDistribution</Title>
+      <Shortcut>ColumnDistribution</Shortcut>
+      <Description>Select distinct values of a column and their counts</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,26 +13,27 @@
     <Snippet>
       <Declarations>
         <Literal>
-          <ID>object</ID>
+          <ID>Schema</ID>
           <ToolTip />
           <Default />
         </Literal>
         <Literal>
-          <ID>alias</ID>
+          <ID>Table</ID>
           <ToolTip />
           <Default />
         </Literal>
         <Literal>
-          <ID>match_condition</ID>
+          <ID>Column</ID>
           <ToolTip />
           <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[WHERE NOT EXISTS(
-	SELECT *
-	FROM $object$ AS $alias$
-	WHERE $match_condition$
-)]]></Code>
+      <Code Language="sql"><![CDATA[SELECT
+	$Column$ AS [value],
+	COUNT(*) AS [count]
+FROM $Schema$.$Table$
+GROUP BY $Column$
+ORDER BY $Column$]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

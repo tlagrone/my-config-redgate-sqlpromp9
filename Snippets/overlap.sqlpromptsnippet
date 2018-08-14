@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>overlap</Title>
+      <Shortcut>overlap</Shortcut>
+      <Description>cardinality of "left only", "both", and "right only" via an outer join</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>LeftSchemaName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>LeftTableName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>LeftAlias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>RightSchemaName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>RightTableName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>RightAlias</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>RightColumnName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>LeftColumnName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[WITH
+	overlap AS (
+		SELECT
+            CASE
+                WHEN $LeftAlias$.$LeftColumnName$ IS NOT NULL THEN 1
+                ELSE 0
+            END AS [exists_$LeftTableName$],
+            CASE
+                WHEN $RightAlias$.$RightColumnName$ IS NOT NULL THEN 1
+                ELSE 0
+            END AS [exists_$RightTableName$]
+        FROM $LeftSchemaName$.$LeftTableName$ AS $LeftAlias$
+            FULL OUTER JOIN $RightSchemaName$.$RightTableName$ AS $RightAlias$
+                ON  $RightAlias$.$RightColumnName$ = $LeftAlias$.$LeftColumnName$
+	)
+SELECT
+    COUNT(*) AS count_rows,
+    ol.[exists_$LeftTableName$],
+    ol.[exists_$RightTableName$]
+FROM overlap AS ol
+GROUP BY
+    ol.[exists_$LeftTableName$],
+    ol.[exists_$RightTableName$]
+ORDER BY
+    ol.[exists_$LeftTableName$] DESC,
+    ol.[exists_$RightTableName$] DESC]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

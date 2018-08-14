@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>References</Title>
+      <Shortcut>References</Shortcut>
+      <Description>References to a target object.</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>SchemaName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>EntityName</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>ReferencedClass</ID>
+          <ToolTip />
+          <Default>OBJECT</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT
+	ref.referencing_schema_name,
+	ref.referencing_entity_name,
+	obj.type_desc AS referencing_object_type_desc,
+	'$SchemaName$' AS referenced_schema_name,
+	'$EntityName$' AS referenced_entity_name
+FROM sys.dm_sql_referencing_entities('$SchemaName$.$EntityName$', N'$ReferencedClass$') AS ref
+	LEFT JOIN sys.schemas AS sch
+		ON  sch.name = ref.referencing_schema_name
+	LEFT JOIN sys.objects AS obj
+		ON  obj.name = ref.referencing_entity_name
+ORDER BY
+	ref.referencing_schema_name,
+	obj.type_desc,
+	ref.referencing_entity_name;]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
