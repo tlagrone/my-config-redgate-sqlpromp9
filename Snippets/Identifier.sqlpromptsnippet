@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>fkas</Title>
-      <Shortcut>fkas</Shortcut>
-      <Description>sys.foreign_keys AS fk</Description>
+      <Title>Identifier</Title>
+      <Shortcut>Identifier</Shortcut>
+      <Description>[$Identifier$]</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.foreign_keys AS fk]]></Code>
+      <Code Language="sql"><![CDATA[[$SELECTEDTEXT$]]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

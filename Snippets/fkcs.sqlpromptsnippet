@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ij</Title>
-      <Shortcut>ij</Shortcut>
-      <Description>INNER JOIN fragment</Description>
+      <Title>fkcs</Title>
+      <Shortcut>fkcs</Shortcut>
+      <Description>sys.foreign_key_columns AS fkc</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[INNER JOIN]]></Code>
+      <Code Language="sql"><![CDATA[sys.foreign_key_columns AS fkc]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

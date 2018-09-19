@@ -1,0 +1,4 @@
+/*.settings  # necessary to glob since name is dynamic (date-based)
+/ConnectionColoringServers.xml
+/LoggingConfiguration.xml
+/SavedTabs.db

@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>tc_</Title>
-      <Shortcut>tc_</Shortcut>
-      <Description>surround with TRY ... CATCH</Description>
+      <Title>SurroundWithTryCatch</Title>
+      <Shortcut>SurroundWithTryCatch</Shortcut>
+      <Description>Surround with TRY ... CATCH blocks</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>

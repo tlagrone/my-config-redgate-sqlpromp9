@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>SelectOneFrom</Title>
+      <Shortcut>SelectOneFrom</Shortcut>
+      <Description>SELECT $OneColumn$ FROM</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>RowSet</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>Column</ID>
+          <ToolTip />
+          <Default>*</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[SELECT $Column$
+FROM $RowSet$]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

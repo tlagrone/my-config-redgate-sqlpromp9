@@ -15,19 +15,19 @@
         <Literal>
           <ID>DatabaseName</ID>
           <ToolTip />
-          <Default>DemoRNET</Default>
+          <Default>RNET93_DataDictionary</Default>
         </Literal>
         <Literal>
           <ID>SchemaName</ID>
           <ToolTip />
-          <Default>dbo</Default>
+          <Default>uaroperator</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[:SetVar db "$DatabaseName$"
-:SetVar sch "$SchemaName$"
+      <Code Language="sql"><![CDATA[:SetVar database_name "$DatabaseName$"
+:SetVar schema_name "$SchemaName$"
 
 SET NOCOUNT ON;
-USE $(db);
+USE $(database_name);
 GO
 
 

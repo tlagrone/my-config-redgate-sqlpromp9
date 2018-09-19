@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>sv</Title>
-      <Shortcut>sv</Shortcut>
-      <Description>$(sch) variable</Description>
+      <Title>l0t</Title>
+      <Shortcut>l0t</Shortcut>
+      <Description>level0type</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[$(sch)]]></Code>
+      <Code Language="sql"><![CDATA[level0type]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

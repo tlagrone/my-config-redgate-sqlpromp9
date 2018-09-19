@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>eplk</Title>
+      <Shortcut>eplk</Shortcut>
+      <Description>CONVERT(nvarchar(max), ep.value) LIKE '%$substring$%'</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>substring</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[CONVERT(nvarchar(max), ep.value) LIKE '%$substring$%']]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

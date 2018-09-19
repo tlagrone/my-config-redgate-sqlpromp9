@@ -48,14 +48,14 @@
           <Default />
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[EXEC sp_dropextendedproperty(
-	  @name = $name$
-	, @level0type = $level0type$
-	, @level0name = $level0name$
-	, @level1type = $level1type$
-	, @level1name = $level1name$
-	, @level2type = $level2type$
-	, @level2name = $level2name$
+      <Code Language="sql"><![CDATA[sp_dropextendedproperty(
+	@name = $name$,
+	@level0type = $level0type$,
+	@level0name = $level0name$,
+	@level1type = $level1type$,
+	@level1name = $level1name$,
+	@level2type = $level2type$,
+	@level2name = $level2name$
 )]]></Code>
     </Snippet>
   </CodeSnippet>

@@ -4,7 +4,7 @@
     <Header>
       <Title>be</Title>
       <Shortcut>be</Shortcut>
-      <Description>BEGIN ... END</Description>
+      <Description>Surround with BEGIN ... END</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -13,7 +13,7 @@
     <Snippet>
       <Declarations />
       <Code Language="sql"><![CDATA[BEGIN
-    $CURSOR$
+	$SELECTEDTEXT$$CURSOR$
 END]]></Code>
     </Snippet>
   </CodeSnippet>

@@ -49,7 +49,7 @@ FROM sys.schemas AS src_sch
         ON  tar_col.object_id = tar_obj.object_id
         AND tar_col.name = ref.referenced_minor_name
 WHERE
-	tar_sch.name IN ('$TargetSchemaName$')
+	((tar_sch.name IS NULL AND src_sch.name IN ('$TargetSchemaName$')) OR tar_sch.name IN ('$TargetSchemaName$'))
 	AND tar_obj.name IN ('$TargetObjectName$')
 	AND tar_col.name IN ('$TargetColumnName$')
 ORDER BY

@@ -22,7 +22,7 @@
   <IncludeColumnNameHints>True</IncludeColumnNameHints>
   <IncludePartialFKJoinConditions>False</IncludePartialFKJoinConditions>
   <AlwaysIncludeNameMatchedJoinConditions>True</AlwaysIncludeNameMatchedJoinConditions>
-  <AlwaysIncludeTypeMatchedJoinConditions>False</AlwaysIncludeTypeMatchedJoinConditions>
+  <AlwaysIncludeTypeMatchedJoinConditions>True</AlwaysIncludeTypeMatchedJoinConditions>
   <FlipColumnsOnJoinCondition>False</FlipColumnsOnJoinCondition>
   <AutoGenerateAlterProcStatement>True</AutoGenerateAlterProcStatement>
   <AutoInsertParenthesesForBuiltInFunctionsAndTypes>True</AutoInsertParenthesesForBuiltInFunctionsAndTypes>

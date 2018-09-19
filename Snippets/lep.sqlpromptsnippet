@@ -48,15 +48,14 @@
           <Default>NULL</Default>
         </Literal>
       </Declarations>
-      <Code Language="sql"><![CDATA[SELECT *
-FROM fn_listextendedproperty(
-	  $name$
-	, $level0type$
-	, $level0name$
-	, $level1type$
-	, $level1name$
-	, $level2type$
-	, $level2name$
+      <Code Language="sql"><![CDATA[fn_listextendedproperty(
+	$name$,
+	$level0type$,
+	$level0name$,
+	$level1type$,
+	$level1name$,
+	$level2type$,
+	$level2name$
 )]]></Code>
     </Snippet>
   </CodeSnippet>

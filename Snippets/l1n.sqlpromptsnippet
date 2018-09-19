@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>ij</Title>
-      <Shortcut>ij</Shortcut>
-      <Description>INNER JOIN fragment</Description>
+      <Title>l1n</Title>
+      <Shortcut>l1n</Shortcut>
+      <Description>level1name</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[INNER JOIN]]></Code>
+      <Code Language="sql"><![CDATA[level1name]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

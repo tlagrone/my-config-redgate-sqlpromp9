@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Proportion</Title>
+      <Shortcut>Proportion</Shortcut>
+      <Description>Proportion of rowset that satisfies a condition (returns NULL if rowset is empty)</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Condition</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[IIF(COUNT(*) = 0, NULL, SUM(IIF($Condition$, 1, 0)) / CONVERT(real, COUNT(*))) ]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

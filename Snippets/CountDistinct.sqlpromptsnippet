@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>CountDistinct</Title>
+      <Shortcut>CountDistinct</Shortcut>
+      <Description>COUNT(DISTINCT ...) fragment</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Column</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[COUNT(DISTINCT $Column$)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

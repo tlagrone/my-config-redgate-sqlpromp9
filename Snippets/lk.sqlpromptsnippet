@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>lk</Title>
+      <Shortcut>lk</Shortcut>
+      <Description>LIKE fragment that emulates a "contains" function for substrings</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>substring</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[LIKE '%$substring$%']]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

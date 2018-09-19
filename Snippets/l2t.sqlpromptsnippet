@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>fkcas</Title>
-      <Shortcut>fkcas</Shortcut>
-      <Description>sys.foreign_key_columns AS fkc</Description>
+      <Title>l2t</Title>
+      <Shortcut>l2t</Shortcut>
+      <Description>level2type</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,7 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[sys.foreign_key_columns AS fkc]]></Code>
+      <Code Language="sql"><![CDATA[level2type]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>

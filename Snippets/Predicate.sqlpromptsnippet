@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets>
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>Predicate</Title>
+      <Shortcut>Predicate</Shortcut>
+      <Description>Boolean predicate expression</Description>
+      <Author />
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+    </Header>
+    <Snippet>
+      <Declarations>
+        <Literal>
+          <ID>Value</ID>
+          <ToolTip />
+          <Default />
+        </Literal>
+        <Literal>
+          <ID>Predicate</ID>
+          <ToolTip />
+          <Default>IS NOT NULL</Default>
+        </Literal>
+      </Declarations>
+      <Code Language="sql"><![CDATA[IIF($Value$ $Predicate$, 1, 0)]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>

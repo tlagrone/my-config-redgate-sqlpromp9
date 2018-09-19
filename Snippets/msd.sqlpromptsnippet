@@ -2,9 +2,9 @@
 <CodeSnippets>
   <CodeSnippet Format="1.0.0">
     <Header>
-      <Title>be_</Title>
-      <Shortcut>be_</Shortcut>
-      <Description>surround with BEGIN ... END</Description>
+      <Title>msd</Title>
+      <Shortcut>msd</Shortcut>
+      <Description>MS_Description</Description>
       <Author />
       <SnippetTypes>
         <SnippetType>Expansion</SnippetType>
@@ -12,9 +12,7 @@
     </Header>
     <Snippet>
       <Declarations />
-      <Code Language="sql"><![CDATA[BEGIN
-	$SELECTEDTEXT$$CURSOR$
-END]]></Code>
+      <Code Language="sql"><![CDATA[MS_Description]]></Code>
     </Snippet>
   </CodeSnippet>
 </CodeSnippets>
